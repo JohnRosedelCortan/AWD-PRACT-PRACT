@@ -318,3 +318,134 @@ body {
     padding: 10px;
     border-bottom: 1px solid white;
     }
+/* Responsive Adjustments */
+@media (min-width: 1440px) {
+    body {
+        font-size: 1.2rem;
+    }
+    .hero h2 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 80px 20px;
+    }
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    .nav-menu {
+        gap: 15px;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .features {
+        flex-direction: column;
+    }
+    .feature {
+        width: 90%;
+    }
+    .contact {
+        width: 80%;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .features {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .feature {
+        width: 100%;
+    }
+    .about-person {
+        width: 100%;
+    }
+    .contact {
+        width: 90%;
+    }
+    .services {
+        width: 95%;
+    }
+}
+
+/* Signup Form */
+.signup-section {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+}
+
+.signup-form input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+.signup-form input::placeholder {
+    color: #333;
+}
+
+.signup-form .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #00d4ff;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.signup-form .cta-button:hover {
+    background: #00aaff;
+}
+
+.signup-form .cancel-button {
+    background: #ff6b6b;
+}
+
+.signup-form .cancel-button:hover {
+    background: #ff3b3b;
+}
+
